@@ -1,6 +1,6 @@
 /**
  * Keeps public pages at a fixed desktop layout width, scaled to fit the device
- * (same effect as hanaliberty.com mobile — full desktop UI, no sideways scroll).
+ * (same effect as Hana Fidelity public mobile — full desktop UI, no sideways scroll).
  */
 (function () {
     var meta = document.querySelector('meta[name="viewport"][data-sr-fit]');

@@ -1,5 +1,5 @@
 /** Bump when replacing files in /public to bust browser & Next image cache. */
-const LOGO_CACHE_VERSION = "hana-liberty-1";
+const LOGO_CACHE_VERSION = "hana-fidelity-1";
 
 function brandAsset(path: string): string {
 	return `${path}?v=${LOGO_CACHE_VERSION}`;

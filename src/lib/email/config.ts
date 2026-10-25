@@ -9,7 +9,7 @@ export function getAppUrl(): string {
 }
 
 export function getEmailSiteName(): string {
-  return process.env.EMAIL_SITE_NAME?.trim() || "Hana Liberty";
+  return process.env.EMAIL_SITE_NAME?.trim() || "Hana Fidelity";
 }
 
 export function getEmailLogoUrl(): string {

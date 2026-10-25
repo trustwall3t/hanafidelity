@@ -19,7 +19,7 @@ export type HanaEmailLayoutOptions = {
   footnote?: string;
 };
 
-/** Table-based HTML layout aligned with HanaLiberty marketing (green + deep teal). */
+/** Table-based HTML layout aligned with Hana Fidelity marketing (green + deep teal). */
 export function renderHanaEmailLayout(options: HanaEmailLayoutOptions): string {
   const siteName = escapeHtml(getEmailSiteName());
   const logoUrl = escapeHtml(getEmailLogoUrl());

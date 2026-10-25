@@ -37,7 +37,7 @@ export async function generateViewport(): Promise<Viewport> {
 
 export const metadata: Metadata = {
 	title: {
-		default: 'Hana Liberty platform',
+		default: 'Hana Fidelity platform',
 		template: '%s',
 	},
 	description: 'Investment platform — copy trading, plans, and member dashboard.',
