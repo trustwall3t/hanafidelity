@@ -16,6 +16,7 @@ import { ChevronDown, Settings2, UserRound } from 'lucide-react';
 import { ThemeLogo } from '@/components/brand/ThemeLogo';
 import Link from 'next/link';
 import LogoutButton from '../../components/LogoutButton';
+import { LanguagePicker } from '@/components/i18n/LanguagePicker';
 import { ThemeToggle } from '@/components/dashboard/ThemeToggle';
 
 const AdminDashboardLayout = ({ children }: { children: React.ReactNode }) => {
@@ -38,7 +39,8 @@ const AdminDashboardLayout = ({ children }: { children: React.ReactNode }) => {
 						</div>
 					</div>
 
-					<div className='flex items-center gap-1'>
+					<div className='flex items-center gap-1 sm:gap-2'>
+						<LanguagePicker variant='compact' />
 						<ThemeToggle />
 						<Menubar className='border-none bg-transparent shadow-none'>
 							<MenubarMenu>

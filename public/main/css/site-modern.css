@@ -211,9 +211,10 @@ a:hover {
 .sr-gtranslate-float {
   position: fixed;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10050;
+  bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  top: auto;
+  transform: none;
+  z-index: 10040;
   width: 12.25rem;
   padding: 0.75rem 0.65rem 0.85rem;
   background: #fff;

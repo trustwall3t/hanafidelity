@@ -1,5 +1,5 @@
 import { AuthBrandLogo } from "@/components/auth/AuthBrandLogo";
-import { ThemeToggle } from "@/components/dashboard/ThemeToggle";
+import { AuthToolbar } from "@/components/auth/AuthToolbar";
 
 const AdminAuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -13,11 +13,11 @@ const AdminAuthLayout = ({ children }: { children: React.ReactNode }) => {
       <div className="relative flex w-full flex-col bg-background">
         <div className="flex items-center justify-between px-4 pt-4 sm:px-6 sm:pt-6 md:hidden">
           <AuthBrandLogo />
-          <ThemeToggle />
+          <AuthToolbar />
         </div>
         <div className="relative flex flex-1 items-center justify-center">
           <div className="absolute right-4 top-4 z-10 hidden sm:right-6 sm:top-6 md:block">
-            <ThemeToggle />
+            <AuthToolbar />
           </div>
           {children}
         </div>

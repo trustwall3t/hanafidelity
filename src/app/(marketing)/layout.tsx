@@ -2,6 +2,7 @@ import { GoogleTranslateBar } from "@/components/public/GoogleTranslateBar";
 import { MarketingHtmlClass } from "@/components/public/MarketingHtmlClass";
 import { MarketingThemeGuard } from "@/components/public/MarketingThemeGuard";
 import { PublicBootGate } from "@/components/public/PublicBootGate";
+import { isGoogleTranslateEnabled } from "@/lib/public/google-translate-enabled";
 import { getPublicSite } from "@/lib/public/home-payload";
 import { SITE_LOGO_URL } from "@/lib/public/site-logo";
 import type { Metadata } from "next";
@@ -62,7 +63,9 @@ export default async function MarketingLayout({ children }: { children: ReactNod
       <MarketingThemeGuard>
         <PublicBootGate />
         <MarketingHtmlClass />
-        {site.googleTranslate ? <GoogleTranslateBar /> : null}
+        {isGoogleTranslateEnabled(site.googleTranslate) ? (
+          <GoogleTranslateBar />
+        ) : null}
         {children}
       </MarketingThemeGuard>
     </>

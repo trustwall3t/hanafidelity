@@ -11,6 +11,7 @@ import { redirect } from 'next/navigation';
 import { UserProvider } from '@/lib/context/UserContext';
 import { UserMenu } from './_components/UserMenu';
 import { Clock3, ShieldAlert } from 'lucide-react';
+import { LanguagePicker } from '@/components/i18n/LanguagePicker';
 import { ThemeToggle } from '@/components/dashboard/ThemeToggle';
 import { Button } from '@/components/ui/button';
 import { syncUserRoi } from '@/lib/investment/sync-user-roi';
@@ -49,7 +50,8 @@ const DashboardLayout = async ({ children }: { children: ReactNode }) => {
 							</div>
 						</div>
 
-						<div className='flex items-center gap-1'>
+						<div className='flex items-center gap-1 sm:gap-2'>
+							<LanguagePicker variant='compact' />
 							<ThemeToggle />
 							<UserMenu />
 						</div>

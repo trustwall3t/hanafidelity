@@ -1,6 +1,7 @@
 import DynamicStyles from '@/components/DynamicStyles';
 import { PublicDesktopLockLifecycle } from '@/components/public/PublicDesktopLockLifecycle';
 import SmartsuppScript from '@/components/SmartsuppScript';
+import { GoogleTranslateProvider } from '@/components/i18n/GoogleTranslateProvider';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { DesktopViewport } from '@/components/public/DesktopViewport';
 import { SR_LAYOUT_WIDTH } from '@/lib/public/gg-layout-width';
@@ -82,11 +83,13 @@ export default async function RootLayout({
 			<body className={bodyClass} suppressHydrationWarning>
 				{isMarketing ? <DesktopViewport /> : null}
 				<ThemeProvider>
-					<PublicDesktopLockLifecycle />
-					<DynamicStyles />
-					<SmartsuppScript />
-					{children}
-					<Toaster />
+					<GoogleTranslateProvider>
+						<PublicDesktopLockLifecycle />
+						<DynamicStyles />
+						<SmartsuppScript />
+						{children}
+						<Toaster />
+					</GoogleTranslateProvider>
 				</ThemeProvider>
 			</body>
 		</html>

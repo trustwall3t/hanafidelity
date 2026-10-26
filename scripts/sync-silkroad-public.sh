@@ -22,4 +22,10 @@ if [[ -d "$SILKROAD/storage/app/public" ]]; then
   rsync -a "$SILKROAD/storage/app/public/" "$ROOT/public/storage/"
 fi
 
-echo "Synced public/main, documents, photos, and storage from $SILKROAD"
+# Review avatars (Trustpilot section) — Laravel storage/testimonials
+if [[ -d "$SILKROAD/storage/app/public/testimonials" ]]; then
+  mkdir -p "$ROOT/public/storage/testimonials"
+  rsync -a "$SILKROAD/storage/app/public/testimonials/" "$ROOT/public/storage/testimonials/"
+fi
+
+echo "Synced public/main, documents, photos, storage, and testimonials from $SILKROAD"

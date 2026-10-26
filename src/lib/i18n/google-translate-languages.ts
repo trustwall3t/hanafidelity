@@ -1,0 +1,40 @@
+export const GOOGLE_TRANSLATE_PAGE_LANG = "en";
+
+export const GOOGLE_TRANSLATE_LANGUAGES: Record<string, string> = {
+  en: "English",
+  es: "Español",
+  fr: "Français",
+  de: "Deutsch",
+  it: "Italiano",
+  pt: "Português",
+  ru: "Русский",
+  "zh-CN": "中文 (简体)",
+  "zh-TW": "中文 (繁體)",
+  ja: "日本語",
+  ko: "한국어",
+  ar: "العربية",
+  hi: "हिन्दी",
+  id: "Indonesia",
+  th: "ไทย",
+  vi: "Tiếng Việt",
+  tr: "Türkçe",
+  pl: "Polski",
+  uk: "Українська",
+  ms: "Bahasa Melayu",
+  bn: "বাংলা",
+  fa: "فارسی",
+  nl: "Nederlands",
+  sv: "Svenska",
+  ro: "Română",
+  el: "Ελληνικά",
+  cs: "Čeština",
+  da: "Dansk",
+  fi: "Suomi",
+  hu: "Magyar",
+  nb: "Norsk",
+  he: "עברית",
+};
+
+export const GOOGLE_TRANSLATE_INCLUDED = Object.keys(
+  GOOGLE_TRANSLATE_LANGUAGES,
+).join(",");

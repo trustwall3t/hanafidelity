@@ -14,12 +14,22 @@ export function portraitUrl(id: number | null, picture: string | null): string {
   const pic = picture?.trim() ?? "";
   if (pic.startsWith("http://") || pic.startsWith("https://")) return pic;
 
-  const relative = pic.replace(/^\//, "");
+  let relative = pic.replace(/^\//, "");
+  if (relative.startsWith("storage/")) {
+    relative = relative.slice("storage/".length);
+  }
+  if (relative.startsWith("public/storage/")) {
+    relative = relative.slice("public/storage/".length);
+  }
+  if (relative.startsWith("main/img/")) {
+    return `/${relative}`;
+  }
+  if (relative.startsWith("testimonials/")) {
+    return `/storage/${relative}`;
+  }
   if (relative) {
-    const base = relative.startsWith("main/img/")
-      ? `/${relative}`
-      : `/main/img/${relative.startsWith("testimonials/") ? relative : `testimonials/${relative.split("/").pop()}`}`;
-    return base;
+    const file = relative.split("/").pop() ?? relative;
+    return `/storage/testimonials/${file}`;
   }
 
   const seed = id ?? 0;
