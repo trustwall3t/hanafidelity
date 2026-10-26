@@ -16,6 +16,7 @@ import { ThemeToggle } from '@/components/dashboard/ThemeToggle';
 import { Button } from '@/components/ui/button';
 import { syncUserRoi } from '@/lib/investment/sync-user-roi';
 import { resolveKycDisplayState } from '@/lib/kyc-status';
+import { ImpersonationBanner } from '@/components/dashboard/ImpersonationBanner';
 
 const DashboardLayout = async ({ children }: { children: ReactNode }) => {
 	const session = await getSession();
@@ -58,6 +59,12 @@ const DashboardLayout = async ({ children }: { children: ReactNode }) => {
 					</header>
 
 					<div className='mt-16 flex-1 p-4 pb-[calc(6rem+env(safe-area-inset-bottom,0px))] md:p-8 md:pb-8'>
+						{session.impersonatedByAdminId ? (
+							<ImpersonationBanner
+								memberName={session.user.name}
+								memberId={session.userId}
+							/>
+						) : null}
 						{kycState === 'required' ? (
 							<div className='mb-4 flex flex-col gap-3 rounded-lg border border-destructive/30 bg-destructive/10 p-4 text-destructive sm:flex-row sm:items-center sm:justify-between'>
 								<p className='text-sm font-medium flex items-center gap-2'>
