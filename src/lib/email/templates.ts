@@ -42,7 +42,7 @@ export const emailTemplates = {
       headline: "Password reset",
       bodyHtml: `
         <p style="margin:0 0 16px;">We received a request to reset the password for your ${escapeHtml(site())} account.</p>
-        <p style="margin:0;">If you made this request, use the button below. Otherwise, ignore this email — your password will stay the same.</p>
+        <p style="margin:0;">If you made this request, use the button below. Otherwise, ignore this email; your password will stay the same.</p>
       `,
       cta: { label: "Reset password", href: data.link },
     }),
@@ -101,7 +101,7 @@ export const emailTemplates = {
   }),
 
   trade: (data: { amount: number; symbol: string; type: string }): EmailTemplate => ({
-    subject: `Trade executed — ${data.symbol}`,
+    subject: `Trade executed: ${data.symbol}`,
     html: renderHanaEmailLayout({
       preheader: `${data.type} order on ${data.symbol}`,
       headline: "Trade confirmation",
@@ -117,7 +117,7 @@ export const emailTemplates = {
     amount: number;
     type: "deposit" | "withdraw";
   }): EmailTemplate => ({
-    subject: `[Admin] New ${data.type} — ${money(data.amount)}`,
+    subject: `[Admin] New ${data.type}: ${money(data.amount)}`,
     html: renderHanaEmailLayout({
       preheader: `User ${data.type} pending review`,
       headline: `${data.type === "deposit" ? "Deposit" : "Withdrawal"} notification`,
@@ -129,7 +129,7 @@ export const emailTemplates = {
         label: "Open admin",
         href: `${getAppUrl()}/admin/dashboard/transactions`,
       },
-      footnote: "Internal operations notice — not sent to clients.",
+      footnote: "Internal operations notice. Not sent to clients.",
     }),
   }),
 

@@ -200,7 +200,7 @@ export default async function AdminInvestmentPlansPage({
           {settings?.tradeMode ? "On" : "Off"}
         </span>
         {settings && !settings.tradeMode ? (
-          <span> — automatic ROI will not credit until enabled in site settings.</span>
+          <span> Automatic ROI will not credit until enabled in site settings.</span>
         ) : null}
       </p>
 
@@ -220,7 +220,7 @@ export default async function AdminInvestmentPlansPage({
             <div className="rounded-lg border border-border bg-muted/40 px-4 py-3 text-sm flex flex-wrap items-center justify-between gap-2">
               <div>
                 <p className="font-medium">
-                  ROI for {filteredPlan.userName} — {filteredPlan.planName}
+                  ROI for {filteredPlan.userName}: {filteredPlan.planName}
                 </p>
                 <p className="text-xs text-muted-foreground">
                   Principal {formatMoney(filteredPlan.amount)} · Earned on plan{" "}

@@ -41,7 +41,8 @@ export const metadata: Metadata = {
 		default: 'Hana Fidelity platform',
 		template: '%s',
 	},
-	description: 'Investment platform — copy trading, plans, and member dashboard.',
+	description:
+		'Live trading, forex, stocks, commodities, investment plans, and member dashboard.',
 };
 
 export default async function RootLayout({

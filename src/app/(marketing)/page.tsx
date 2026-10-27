@@ -1,8 +1,12 @@
+import { AsianFinancialInstitutionsBar } from "@/components/public/AsianFinancialInstitutionsBar";
 import { CorporateCertificateSection } from "@/components/public/CorporateCertificateSection";
 import { HeroSection } from "@/components/public/HeroSection";
+import { HomePageAsiaPacificSection } from "@/components/public/HomePageAsiaPacificSection";
+import { HomePagePlatformSection } from "@/components/public/HomePagePlatformSection";
 import {
-  HomePageCopyTradingSection,
+  HomePageCapitalInsuranceSpotlight,
   HomePageCtaBand,
+  HomePageLiveTradingSpotlight,
   HomePageStatsSection,
   HomePageWhyChooseSection,
 } from "@/components/public/HomePageSections";
@@ -27,16 +31,20 @@ export default async function MarketingHomePage() {
       <PublicHeader brandName={data.site.siteName} />
       <main className="sr-main">
         <HeroSection siteName={data.site.siteName} />
+        <AsianFinancialInstitutionsBar />
         <PaymentPartnersBar />
         {corpCert ? <CorporateCertificateSection cert={corpCert} /> : null}
+        <HomePagePlatformSection siteName={data.site.siteName} />
         <HomePageWhyChooseSection site={data.site} />
+        <HomePageLiveTradingSpotlight />
+        <HomePageCapitalInsuranceSpotlight />
+        <HomePageAsiaPacificSection siteName={data.site.siteName} />
         <TrustpilotReviews site={data.site} testimonials={data.testimonials} />
-        <HomePageCopyTradingSection />
         <HomePageStatsSection site={data.site} stats={data.stats} />
         <InvestmentPlans plans={data.plans} site={data.site} />
         <TradingViewRegionalMarkets
           sectionTitle="Markets at a glance"
-          sectionLead="American, European, and Asian stocks, crypto, and major FX — live from TradingView. Full trading is in your dashboard."
+          sectionLead="Singapore, Hong Kong, Tokyo, and Mumbai listings alongside Americas and Europe, plus crypto and APAC FX pairs with live TradingView charts."
         />
         <HomePageCtaBand />
       </main>

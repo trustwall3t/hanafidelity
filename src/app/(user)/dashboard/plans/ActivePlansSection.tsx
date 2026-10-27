@@ -163,7 +163,7 @@ export function ActivePlansSection({
       {active.length > 0 && roiHistory.length === 0 ? (
         <DashboardPanel className="p-4 text-sm text-muted-foreground">
           No ROI payments yet. If your next payout time has passed, refresh this
-          page — due amounts are added to your wallet and appear under Recent ROI
+          page. Due amounts are added to your wallet and appear under Recent ROI
           payments and transaction history.
         </DashboardPanel>
       ) : null}

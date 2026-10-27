@@ -264,7 +264,7 @@ const DashboardClient = ({ data }: DashboardClientProps) => {
 				) : null}
 				{activeTrades > 0 ? (
 					<p className='mt-3 text-xs text-muted-foreground'>
-						{activeTrades} self/copy trade{activeTrades === 1 ? '' : 's'} open —{' '}
+						{activeTrades} self/copy trade{activeTrades === 1 ? '' : 's'} open.{' '}
 						<Link href='/dashboard/trading-history' className='text-brand hover:underline'>
 							trading history
 						</Link>

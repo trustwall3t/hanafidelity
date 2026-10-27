@@ -114,7 +114,7 @@ export function MarketingPageContent({
           sectionTitle={marketsTitle ?? "Market charts"}
           sectionLead={
             marketsLead ??
-            "American, European, and Asian stocks, crypto, and major FX — live from TradingView."
+            "Americas, Europe, and Asia-Pacific stocks, crypto, and FX with live TradingView charts."
           }
         />
       ) : null}

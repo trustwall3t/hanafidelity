@@ -18,33 +18,39 @@ export function PublicFooter({ brandName }: Props) {
           <h2>{tagline}</h2>
         </div>
         <div>
-          <h2>Mirror Trading</h2>
+          <h2>Platform</h2>
           <ul>
             <li>
-              <Link href="/optioncopytrading">Options copy trading</Link>
+              <Link href="/livetrading">Live trading</Link>
             </li>
             <li>
-              <Link href="/advancetrading">Advanced trading account above PDT</Link>
+              <Link href="/capital-insurance">Capital Insurance Scheme</Link>
             </li>
             <li>
-              <Link href="/livetrading">Live trading interface</Link>
+              <Link href="/softwares">Trading software</Link>
+            </li>
+            <li>
+              <Link href="/optioncopytrading">Copy trading</Link>
             </li>
           </ul>
         </div>
         <div>
-          <h2>Trading Categories</h2>
+          <h2>Markets</h2>
           <ul>
             <li>
-              <Link href="/futures">Futures Trading</Link>
+              <Link href="/stocks">Stock trading</Link>
             </li>
             <li>
-              <Link href="/stocks">Stock Trading</Link>
+              <Link href="/forex">Forex trading</Link>
             </li>
             <li>
-              <Link href="/forex">Forex Trading</Link>
+              <Link href="/advancetrading">Commodities</Link>
             </li>
             <li>
-              <Link href="/oilandgas">Oil and gas stock trading</Link>
+              <Link href="/futures">Futures</Link>
+            </li>
+            <li>
+              <Link href="/oilandgas">Oil &amp; gas</Link>
             </li>
           </ul>
         </div>

@@ -33,7 +33,7 @@ export function JoinPlanForm({
         toast.error(j.error ?? "Could not join plan");
         return;
       }
-      toast.success("Plan activated — see My plans & ROI tab");
+      toast.success("Plan activated. See My plans and ROI tab.");
       router.refresh();
     } finally {
       setBusy(false);

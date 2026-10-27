@@ -37,7 +37,7 @@
             {
                 "heading": "Why Trade with :brand",
                 "bullets": [
-                    "Extensive Market Coverage: A diverse selection of stocks across major exchanges and emerging markets.",
+                    "Asia-Pacific coverage: Singapore, Hong Kong, Tokyo, Mumbai, Kuala Lumpur, Bangkok, and Seoul listings alongside global markets.",
                     "Intuitive Trading Platform: Real-time market data, interactive charts, and customizable trading screens.",
                     "Research and Analysis: Latest news, company reports, analyst recommendations, and stock screeners.",
                     "Educational Resources: Articles, videos, and tutorials on fundamental analysis and trading strategies."
@@ -47,7 +47,7 @@
         "image": "main\/img\/Stock-Exchange_1.png",
         "showRegionalMarkets": true,
         "marketsTitle": "Global equity charts",
-        "marketsLead": "US, European, and Asia-Pacific stocks with live charts. Crypto and FX are included for a full cross-asset view."
+        "marketsLead": "Americas and Europe plus an Asia and Pacific watchlist: Hang Seng, Nikkei, DBS, HSBC, Tencent, HDFC Bank, Maybank, and more. Crypto and APAC FX pairs included."
     },
     "forex": {
         "title": "Forex Trading",
@@ -136,10 +136,10 @@
             {
                 "heading": "Pros and Cons",
                 "bullets": [
-                    "Authorised practice — copy trading is recognised by key regulatory frameworks when using a licensed broker.",
-                    "Portfolio diversification — gain exposure to opportunities you wouldn't usually consider alone.",
-                    "Risk — strategies can fail; losses can translate to follower accounts.",
-                    "Control — copying means entrusting part of your portfolio to another trader's decisions."
+                    "Authorised practice: copy trading is recognised by key regulatory frameworks when using a licensed broker.",
+                    "Portfolio diversification: gain exposure to opportunities you would not usually consider alone.",
+                    "Risk: strategies can fail; losses can translate to follower accounts.",
+                    "Control: copying means entrusting part of your portfolio to another trader's decisions."
                 ]
             },
             {
@@ -153,27 +153,58 @@
         "image": "main\/img\/start-trading-1.png"
     },
     "advancetrading": {
-        "title": "Advanced trading account above PDT",
-        "subtitle": "Advanced Trading Account \/ Mechanical trading systems",
-        "intro": ":brand has been sharing financial freedom with traders since 2014. In a continuous effort to give traders a more comfortable and safe experience, its experts have been improving the platform ensuring traders can enjoy and make use of that freedom to trade whenever and wherever they like.",
+        "title": "Commodities trading",
+        "subtitle": "Metals, energy, and agriculture",
+        "intro": "Commodity markets give members a way to express views on inflation, industrial demand, and global supply chains. :brand connects education, live pricing context, and related futures and energy pages so you can build a coherent commodities workflow.",
         "sections": [
             {
-                "heading": "Advanced Trading Account",
-                "paragraphs": [
-                    "Advanced Trading Account — also referred to as mechanical trading systems, algorithmic trading, automated trading or system trading — allow traders to establish specific rules for both trade entries and exits that, once programmed, can be automatically executed via a computer.",
-                    "Traders and investors can turn precise entry, exit, and money management rules into automated trading systems that allow computers to execute and monitor the trades."
+                "heading": "What you can explore",
+                "bullets": [
+                    "Precious and industrial metals alongside energy and agricultural themes.",
+                    "Links to futures contracts and oil and gas equity research on sibling pages.",
+                    "Risk tools: position sizing, stops, and margin awareness before you size a trade."
                 ]
             },
             {
-                "heading": "Advantages of Automated Systems",
-                "bullets": [
-                    "Minimizing Emotions: Automated systems help traders stick to the plan without hesitation.",
-                    "Backtesting: Apply rules to historical data to evaluate viability before risking live capital.",
-                    "Monitoring: Technology failures can happen; automated systems still require oversight."
+                "heading": "How it fits the platform",
+                "paragraphs": [
+                    "Commodities complement live stock and forex trading in the same member dashboard. Use the live trading terminal for supported symbols, or follow structured investment plans when a longer horizon fits your goal.",
+                    "Automated or rules-based strategies remain optional; many members prefer direct live execution with clear entry and exit rules."
                 ]
             }
         ],
-        "image": "main\/img\/Best-trading-software.webp"
+        "image": "main\/img\/start-trading-2.png"
+    },
+    "capital_insurance": {
+        "title": "Capital Insurance Scheme",
+        "subtitle": "Member capital protection program",
+        "intro": "The Capital Insurance Scheme explains how :brand treats qualifying wallet balances under defined operational coverage. It is separate from market risk on trades: losses from price movement are not reversed by the scheme, but covered operational events may be eligible for relief within published limits.",
+        "sections": [
+            {
+                "heading": "What the scheme is designed to address",
+                "bullets": [
+                    "Documented operational incidents affecting segregated member wallet balances, subject to investigation.",
+                    "Published per-account and per-event limits stated in the member agreement and scheme appendix.",
+                    "Clear eligibility: verified accounts in good standing with complete KYC where required."
+                ]
+            },
+            {
+                "heading": "What members should expect",
+                "paragraphs": [
+                    "Coverage is not a substitute for prudent position sizing or stop-loss discipline on live trades. Read the scheme summary, exclusions, and claims process before funding.",
+                    "Support can walk you through verification steps and where to find the latest scheme version inside your dashboard after registration."
+                ]
+            },
+            {
+                "heading": "Related protections",
+                "bullets": [
+                    "Two-factor authentication and account monitoring on the Insight page.",
+                    "Transparent plan terms for investment tiers, separate from insurance eligibility.",
+                    "24/7 support channels for account and verification questions."
+                ]
+            }
+        ],
+        "image": "main\/img\/5191079.jpg"
     },
     "livetrading": {
         "title": "Live trading interface",

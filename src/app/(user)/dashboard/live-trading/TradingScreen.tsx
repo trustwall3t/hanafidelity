@@ -300,7 +300,7 @@ export default function TradingScreen({
   }) => {
     if (!selectedAsset || placingRef.current) return;
     if (selectedAsset.price <= 0) {
-      toast.error("Price not loaded yet — wait a moment and try again.");
+      toast.error("Price not loaded yet. Wait a moment and try again.");
       return;
     }
 

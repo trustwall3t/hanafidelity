@@ -29,7 +29,7 @@ export function CorporateCertificateSection({ cert }: { cert: CorporateCertifica
                       ‹
                     </button>
                     <span className="sr-pdf-page-info" data-sr-pdf-page-info aria-live="polite">
-                      Page —
+                      Page
                     </span>
                     <button type="button" className="sr-pdf-icon-btn" data-sr-pdf-next aria-label="Next page">
                       ›

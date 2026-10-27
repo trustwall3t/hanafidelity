@@ -1,21 +1,27 @@
 import type { Testimonial } from "@/types/site";
 
+/** Display-only locale hints for Trustpilot-style cards (Asia-Pacific weighted mix). */
 const TP_COUNTRIES = [
+  { code: "SG", flag: "🇸🇬" },
+  { code: "HK", flag: "🇭🇰" },
+  { code: "MY", flag: "🇲🇾" },
+  { code: "TH", flag: "🇹🇭" },
+  { code: "ID", flag: "🇮🇩" },
+  { code: "PH", flag: "🇵🇭" },
+  { code: "VN", flag: "🇻🇳" },
+  { code: "IN", flag: "🇮🇳" },
+  { code: "JP", flag: "🇯🇵" },
+  { code: "KR", flag: "🇰🇷" },
+  { code: "TW", flag: "🇹🇼" },
+  { code: "AU", flag: "🇦🇺" },
+  { code: "NZ", flag: "🇳🇿" },
   { code: "US", flag: "🇺🇸" },
   { code: "GB", flag: "🇬🇧" },
-  { code: "CA", flag: "🇨🇦" },
-  { code: "AU", flag: "🇦🇺" },
-  { code: "DE", flag: "🇩🇪" },
-  { code: "FR", flag: "🇫🇷" },
-  { code: "NL", flag: "🇳🇱" },
-  { code: "SE", flag: "🇸🇪" },
-  { code: "ES", flag: "🇪🇸" },
-  { code: "IT", flag: "🇮🇹" },
-  { code: "CH", flag: "🇨🇭" },
-  { code: "SG", flag: "🇸🇬" },
   { code: "AE", flag: "🇦🇪" },
-  { code: "IE", flag: "🇮🇪" },
-  { code: "NZ", flag: "🇳🇿" },
+  { code: "CN", flag: "🇨🇳" },
+  { code: "BD", flag: "🇧🇩" },
+  { code: "PK", flag: "🇵🇰" },
+  { code: "MM", flag: "🇲🇲" },
 ];
 
 function seedFromKey(key: string): number {

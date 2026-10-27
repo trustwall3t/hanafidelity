@@ -31,6 +31,7 @@ const pages = publicPages as Record<string, PublicPageRecord>;
 export function publicPageKeyForSlug(slug: PublicSlug): string {
   if (slug === "investments") return "investment";
   if (slug === "statistic") return "statistics";
+  if (slug === "capital-insurance") return "capital_insurance";
   return slug;
 }
 

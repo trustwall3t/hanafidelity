@@ -9,10 +9,10 @@ import { SITE_LOGO_URL } from "@/lib/public/site-logo";
 import type { HomeStats } from "@/types/site";
 
 const defaultSite: SiteInfo = {
-  siteName: "Zenith Growth",
+  siteName: "Hana Fidelity",
   siteTitle: "Home",
   description: "",
-  welcomeMessage: "Welcome — start your mirror trading journey",
+  welcomeMessage: "Welcome. Trade live markets, forex, stocks, and commodities from your dashboard.",
   currency: "$",
   logoUrl: SITE_LOGO_URL,
   googleTranslate: false,

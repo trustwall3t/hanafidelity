@@ -59,12 +59,12 @@ export function InvestmentPlans({
       <div className="sr-wrap sr-plans-intro">
         <h2 className="sr-section-title">Investment plans</h2>
         <p className="sr-section-lead">
-          Compare tiers side by side. Amounts and returns come from your admin — clients activate
+          Compare tiers side by side. Amounts and returns come from your admin; clients activate
           after they register and fund.
         </p>
         {usingPreview ? (
           <p className="sr-plans-preview-note" role="status">
-            Preview layout — publish plans in admin to replace these examples.
+            Preview layout. Publish plans in admin to replace these examples.
           </p>
         ) : null}
       </div>

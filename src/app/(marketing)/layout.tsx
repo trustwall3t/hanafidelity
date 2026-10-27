@@ -53,7 +53,7 @@ export default async function MarketingLayout({ children }: { children: ReactNod
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       />
       <link rel="stylesheet" href="/main/css/site-modern.css" />
       <link rel="stylesheet" href="/main/css/desktop-lock.css" />

@@ -1,5 +1,5 @@
 /**
- * Zenith public CTAs → this Next app’s auth routes (not Laravel).
+ * Public CTAs → this app’s auth routes (full page load clears marketing viewport).
  * On marketing pages use a plain `<a href={…}>` (full page load), not `<Link>`,
  * so mobile browsers drop the 1200px marketing viewport before auth renders.
  */

@@ -43,7 +43,7 @@ export function TrustpilotReviews({
           </div>
           <p className="sr-tp-lead">
             {hasReviews
-              ? "Client reviews in a Trustpilot-style layout — shared with permission from verified account holders."
+              ? "Client reviews in a Trustpilot-style layout, shared with permission from verified account holders."
               : `Customer reviews will appear here as clients share their experience with ${site.siteName}.`}
           </p>
           {hasReviews ? <p className="sr-tp-filter">Showing our 4 &amp; 5 star reviews</p> : null}

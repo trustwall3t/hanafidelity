@@ -36,7 +36,7 @@ function mountTradingViewWidget(
 
 export function TradingViewRegionalMarkets({
   sectionTitle = "Global markets",
-  sectionLead = "Live charts and quotes for American, European, and Asian equities, plus crypto and major FX pairs.",
+  sectionLead = "Live charts and quotes for Americas and Europe, plus an Asia and Pacific tab with regional banks, tech leaders, and indices.",
   softBackground = true,
   showTicker = true,
   showOverview = true,
@@ -89,7 +89,7 @@ export function TradingViewRegionalMarkets({
             <div className="sr-market-widget sr-market-widget--overview">
               <h3 className="sr-market-widget-title">Regional charts</h3>
               <p className="sr-market-widget-lead">
-                Switch tabs for Americas, Europe, Asia &amp; Pacific, or crypto — each symbol
+                Switch tabs for Americas, Europe, Asia and Pacific, or crypto. Each symbol
                 includes an interactive chart.
               </p>
               <div className="tradingview-widget-container" ref={overviewRef} />

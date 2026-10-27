@@ -15,8 +15,9 @@ export function HomePageWhyChooseSection({ site }: { site: SiteInfo }) {
         <div>
           <h2 className="sr-section-title">Why clients choose {name}</h2>
           <p className="sr-section-lead">
-            The public site is the front door; the dashboard is where work happens. We keep both
-            aligned so funding, plans, and trades feel like one product — not a pile of add-ons.
+            The public site is the front door; the dashboard is where work happens. Live trading,
+            forex, stocks, and commodities sit alongside wallet funding, investment plans, and the
+            Capital Insurance Scheme for qualifying balances.
           </p>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -26,42 +27,65 @@ export function HomePageWhyChooseSection({ site }: { site: SiteInfo }) {
         <article className="sr-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="sr-card-icon" src="/main/img/dignity-1.png" alt="" />
-          <h3>Client dashboard</h3>
-          <p>Deposits, withdrawals, plans, and account settings in one place.</p>
+          <h3>Live trading terminal</h3>
+          <p>Charts, quotes, and self-trade execution without leaving the member dashboard.</p>
         </article>
         <article className="sr-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="sr-card-icon" src="/main/img/dignity-2.png" alt="" />
-          <h3>Trade &amp; copy</h3>
-          <p>Self-directed markets plus copy trading when clients want to follow a lead trader.</p>
+          <h3>Forex &amp; stocks</h3>
+          <p>Currency pairs and equity markets with APAC and global coverage from the main menu.</p>
         </article>
         <article className="sr-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="sr-card-icon" src="/main/img/dignity-3.png" alt="" />
-          <h3>Multi-market</h3>
-          <p>Stocks, forex, futures, and related services linked from the main menu.</p>
+          <h3>Commodities &amp; protection</h3>
+          <p>Energy and commodity routes plus Capital Insurance Scheme terms for eligible wallets.</p>
         </article>
       </div>
     </section>
   );
 }
 
-export function HomePageCopyTradingSection() {
+export function HomePageLiveTradingSpotlight() {
   return (
     <section className="sr-section sr-section-soft">
       <div className="sr-wrap sr-split">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/main/img/start-trading-1.png" alt="" />
+        <img src="/main/img/start-trading-3.png" alt="" />
         <div>
-          <h2 className="sr-section-title">Copy trading</h2>
+          <h2 className="sr-section-title">Live trading interface</h2>
           <p className="sr-section-lead">
-            Clients choose a trader, set how much of their balance to allocate, and receive signals
-            inside the app. You manage trader profiles and signals from the admin side.
+            Place and monitor self-directed trades with live pricing, chart context, and timed
+            positions. Members use the same terminal for forex, stocks, and crypto-style symbols
+            supported in your configuration.
           </p>
-          <Link className="sr-btn sr-btn-solid" href="/optioncopytrading">
-            How copy trading works
+          <Link className="sr-btn sr-btn-solid" href="/livetrading">
+            Explore live trading
           </Link>
         </div>
+      </div>
+    </section>
+  );
+}
+
+export function HomePageCapitalInsuranceSpotlight() {
+  return (
+    <section className="sr-section">
+      <div className="sr-wrap sr-split">
+        <div>
+          <h2 className="sr-section-title">Capital Insurance Scheme</h2>
+          <p className="sr-section-lead">
+            The scheme describes how qualifying member funds may be covered against defined
+            operational risks, including published limits, exclusions, and verification steps. Review
+            the full program before you fund an account.
+          </p>
+          <Link className="sr-btn sr-btn-solid" href="/capital-insurance">
+            Read scheme overview
+          </Link>
+        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/main/img/5191079.jpg" alt="" />
       </div>
     </section>
   );

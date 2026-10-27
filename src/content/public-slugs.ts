@@ -11,6 +11,7 @@ export const PUBLIC_SLUGS = [
   "livetrading",
   "softwares",
   "optioncopytrading",
+  "capital-insurance",
   "contact",
   "faq",
   "statistic",
@@ -33,7 +34,7 @@ export const SLUG_META: Record<PublicSlug, SlugMeta> = {
   about: {
     title: "About us",
     kicker: "About",
-    lead: "Global asset management with a consulting-based approach to private investing.",
+    lead: "Asia-Pacific asset management with a consulting-based approach to private investing.",
   },
   terms: {
     title: "Terms and conditions",
@@ -48,7 +49,7 @@ export const SLUG_META: Record<PublicSlug, SlugMeta> = {
   futures: {
     title: "Futures trading",
     kicker: "Futures",
-    lead: "Index, energy, metal, and agricultural contracts — with links to related markets.",
+    lead: "Index, energy, metal, and agricultural contracts, with links to related markets.",
   },
   forex: {
     title: "Forex trading",
@@ -58,12 +59,12 @@ export const SLUG_META: Record<PublicSlug, SlugMeta> = {
   stocks: {
     title: "Stock trading",
     kicker: "Stocks",
-    lead: "Active and day trading education, tools, and optional copy-trading.",
+    lead: "Active and day trading on APAC and global listings with live charts and dashboard execution.",
   },
   advancetrading: {
     title: "Commodities",
     kicker: "Commodities",
-    lead: "Institutional commodity exposure with conservative risk discipline since 2015.",
+    lead: "Metals, energy, and agricultural markets with education and risk controls.",
   },
   oilandgas: {
     title: "Oil and gas",
@@ -71,19 +72,24 @@ export const SLUG_META: Record<PublicSlug, SlugMeta> = {
     lead: "Energy sector expertise, stewardship, and structured member participation.",
   },
   livetrading: {
-    title: "Real estate",
-    kicker: "Real estate",
-    lead: "Real assets, estate planning, and long-horizon wealth strategies.",
+    title: "Live trading",
+    kicker: "Live trading",
+    lead: "Professional terminal with charts, live quotes, and timed self-trade positions.",
   },
   softwares: {
-    title: "Retirement planning",
-    kicker: "Retirement",
-    lead: "Income strategies, compounding, and dashboard tools for life after work.",
+    title: "Trading software",
+    kicker: "Software",
+    lead: "Platforms and integrations members use for research and order execution.",
+  },
+  "capital-insurance": {
+    title: "Capital Insurance Scheme",
+    kicker: "Protection",
+    lead: "How qualifying member balances may be covered under published program terms.",
   },
   optioncopytrading: {
     title: "Options copy trading",
     kicker: "Options copy trading",
-    lead: "Understand options — then mirror experienced traders with defined allocation.",
+    lead: "Understand options, then mirror experienced traders with defined allocation.",
   },
   contact: {
     title: "Contact",
@@ -93,7 +99,7 @@ export const SLUG_META: Record<PublicSlug, SlugMeta> = {
   faq: {
     title: "Frequently asked questions",
     kicker: "FAQ",
-    lead: "Answers about accounts, plans, withdrawals, copy trading, and support.",
+    lead: "Answers about live trading, forex, stocks, commodities, the Capital Insurance Scheme, and support.",
   },
   statistic: {
     title: "Our latest news",

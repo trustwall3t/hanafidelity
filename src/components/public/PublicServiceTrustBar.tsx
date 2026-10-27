@@ -3,13 +3,13 @@ export function PublicServiceTrustBar({ brandName }: { brandName: string }) {
   return (
     <div className="gg-trust-bar" role="complementary" aria-label="Why members choose us">
       <div className="gg-trust-bar-item">
-        <strong>Transparent plans</strong>
-        <span>Published minimums, returns, and durations before you commit capital.</span>
+        <strong>APAC market access</strong>
+        <span>Charts and quotes for Singapore, Hong Kong, Tokyo, and regional listings.</span>
       </div>
       <div className="gg-trust-bar-item">
-        <strong>Member dashboard</strong>
+        <strong>Live trading hub</strong>
         <span>
-          Deposits, copy allocation, trading history, and support in one secure hub.
+          Forex, stocks, commodities, trading history, and wallet funding in one secure area.
         </span>
       </div>
       <div className="gg-trust-bar-item">

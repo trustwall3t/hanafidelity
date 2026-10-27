@@ -50,7 +50,7 @@ export default async function LiveTradingPage() {
         <PageHeader
           icon={PageIcons.liveTrading}
           title="Live trading"
-          description="Professional terminal — chart, live quotes, and timed self-trade positions."
+          description="Professional terminal with chart, live quotes, and timed self-trade positions."
         />
         <TradingScreen
           assets={assets}

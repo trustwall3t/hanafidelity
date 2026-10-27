@@ -159,7 +159,7 @@ export function PublicSlugBody({ slug, site, stats = null }: Props) {
         </section>
         <TradingViewRegionalMarkets
           sectionTitle="Live market charts"
-          sectionLead="Americas, Europe, Asia & Pacific, crypto, and forex — updated continuously via TradingView."
+          sectionLead="Americas, Europe, Asia and Pacific markets, crypto, and forex, updated continuously via TradingView."
           softBackground
         />
       </>

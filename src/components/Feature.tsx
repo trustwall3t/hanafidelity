@@ -47,7 +47,7 @@ export default function Features() {
 									Gain access to a diverse range of the
 									world&apos;s most sought-after instruments,
 									spanning from forex pairs to CFDs on stocks,
-									indices, commodities, and cryptocurrencies –
+									indices, commodities, and cryptocurrencies,
 									all conveniently at your fingertips.
 								</p>
 							</div>

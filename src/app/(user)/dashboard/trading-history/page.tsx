@@ -36,7 +36,7 @@ export default async function TradingHistoryPage() {
       <PageHeader
         icon={PageIcons.tradingHistory}
         title="Trading history"
-        description="Self-trades and copy trades — open and closed."
+        description="Self-trades and copy trades, open and closed."
       />
       {trades.length === 0 ? (
         <DashboardEmptyState

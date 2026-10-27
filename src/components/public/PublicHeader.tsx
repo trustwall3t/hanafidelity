@@ -28,20 +28,22 @@ export function PublicHeader({ brandName }: Props) {
           <nav className="sr-nav" id="sr-nav">
             <Link href="/about">About us</Link>
             <details>
-              <summary>Mirror Trading</summary>
+              <summary>Platform</summary>
               <div className="sr-drop">
-                <Link href="/optioncopytrading">Options copy trading</Link>
-                <Link href="/advancetrading">Advanced trading account above PDT</Link>
-                <Link href="/livetrading">Live trading interface</Link>
+                <Link href="/livetrading">Live trading</Link>
+                <Link href="/capital-insurance">Capital Insurance Scheme</Link>
+                <Link href="/softwares">Trading software</Link>
+                <Link href="/optioncopytrading">Copy trading (optional)</Link>
               </div>
             </details>
             <details>
-              <summary>Trading Categories</summary>
+              <summary>Markets</summary>
               <div className="sr-drop">
-                <Link href="/futures">Futures Trading</Link>
-                <Link href="/stocks">Stock Trading</Link>
-                <Link href="/forex">Forex Trading</Link>
-                <Link href="/oilandgas">Oil and gas stock trading</Link>
+                <Link href="/stocks">Stock trading</Link>
+                <Link href="/forex">Forex trading</Link>
+                <Link href="/advancetrading">Commodities</Link>
+                <Link href="/futures">Futures</Link>
+                <Link href="/oilandgas">Oil &amp; gas</Link>
               </div>
             </details>
             <Link href="/investments">Insight</Link>

@@ -28,7 +28,7 @@ export function getCorporateCertificate(): CorporateCertificate | null {
     title: process.env.CORPORATE_CERTIFICATE_TITLE ?? "Certificate of incorporation",
     lead:
       process.env.CORPORATE_CERTIFICATE_LEAD ??
-      "Registered Asian corporation — official filing document. Use the page controls below to read each page, or download the full PDF.",
+      "Registered Asia-Pacific corporation. Official filing document. Use the page controls below to read each page, or download the full PDF.",
     entityLabel: process.env.CORPORATE_CERTIFICATE_ENTITY ?? "Asian corporation",
     url: exists ? `/${relative}` : null,
     exists,

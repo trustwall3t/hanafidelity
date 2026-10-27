@@ -33,7 +33,7 @@ export function PaymentPartnersBar() {
   return (
     <div className="sr-trust-bar sr-trust-bar--partners">
       <div className="sr-wrap sr-trust-bar-strip">
-        <p className="sr-trust-bar-tagline">Trusted payment partners</p>
+        <p className="sr-trust-bar-tagline">Asia-Pacific payment rails</p>
         <div className="sr-partner-marquee">
           <div className="sr-partner-marquee__fade sr-partner-marquee__fade--start" aria-hidden="true" />
           <div className="sr-partner-marquee__fade sr-partner-marquee__fade--end" aria-hidden="true" />

@@ -61,7 +61,7 @@ export function SelfTradeForm({
           >
             {assets.map((a) => (
               <option key={a.symbol} value={a.symbol}>
-                {a.symbol} — {a.name}
+                {a.symbol}: {a.name}
               </option>
             ))}
           </select>

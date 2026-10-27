@@ -23,11 +23,29 @@ export function HeroSection({ siteName }: { siteName: string }) {
       <div className="sr-wrap sr-hero-layout">
         <div>
           <p className="sr-hero-eyebrow">{siteName}</p>
-          <h1>Invest and trade with a platform your team can stand behind</h1>
+          <h1>Live trading, forex, stocks, and commodities in one place</h1>
           <p className="sr-hero-lead">
-            Open an account to access your wallet, investment plans, market trading, and copy
-            trading — the same tools your clients use inside the dashboard every day.
+            Open an account for the live trading terminal, multi-asset markets, investment plans,
+            and the Capital Insurance Scheme for qualifying balances. Optional copy trading is
+            available when members want to follow a lead trader.
           </p>
+          <div className="sr-hero-pills" aria-label="Platform highlights">
+            <a className="sr-hero-pill" href="/livetrading">
+              Live trading
+            </a>
+            <a className="sr-hero-pill" href="/forex">
+              Forex
+            </a>
+            <a className="sr-hero-pill" href="/stocks">
+              Stocks
+            </a>
+            <a className="sr-hero-pill" href="/advancetrading">
+              Commodities
+            </a>
+            <a className="sr-hero-pill" href="/capital-insurance">
+              Capital Insurance
+            </a>
+          </div>
           <div className="sr-actions">
             <a className="sr-btn sr-btn-primary" href={authSignupUrl}>
               Create account
@@ -40,9 +58,9 @@ export function HeroSection({ siteName }: { siteName: string }) {
         <aside className="sr-hero-aside">
           <div className="sr-hero-panel">
             <strong>What you get after registration</strong>
-            Fund your balance, pick an investment tier or place trades on stocks and crypto, and
-            optionally follow traders through copy trading. KYC and support are handled inside the
-            client area.
+            Fund with regional payment options where available, trade from the live terminal, or
+            allocate to a plan. Forex, stocks, and commodity routes are linked from your dashboard
+            menu alongside scheme documentation for eligible capital protection.
           </div>
         </aside>
       </div>
